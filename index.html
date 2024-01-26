@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class = "title">
+        <h1>Expense Tracker</h1>
+        <p>Add a new item:</p>
+    </div>
+
+    <div class = "item">
+        <div class = nameInput>
+            <label for="name">Name:</label>
+            <input type = "text" placeholder = "Where was the expense made?" spellcheck = "false">
+        </div>
+
+        <div class = secondInputs>
+            <label for="date">Date:</label>
+            <input type="date" id="dateInput" name="calendar-date" value="mm/dd/yyyy" min="2024-01-01" max="2024-12-31" />
+
+            <label for="name">Amount:</label>
+            <input type = "text" id = "amountInput" placeholder = "Amount" spellcheck = "false">
+            <div class = buttons>
+                <button>Add Expense</button>
+            </div>
+        </div>
+
+    </div>
+
+    <table id = "inputTable">
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Action</th>
+        </tr>
+    </table>
+
+
+<script src="script.js"></script>
+</body>
+</html>
